@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website with JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>sumpah pemuda</h1>
+    </header>
+
+    <nav>
+        <a href="#sejarah" onclick="showContent('sejarah')">sejarah</a>
+        <a href="#text" onclick="showContent('text')">text</a>
+        <a href="#tokoh" onclick="showContent('tokoh')">tokoh</a>
+        <a href="#tujuan" onclick="showContent('tujuan')">tujuan</a>
+        
+    </nav>
+
+    <main>
+        <div id="sejarah" class="sejarah">
+            <h2>sejarah sumpah  pemuda</h2>
+            <p>Lahirnya Sumpah Pemuda adalah dari hasil rapat para pemuda yakni pada Kongres Pemuda Kedua tanggal 28 Oktober 1928. Kala itu, para pemuda menyelenggarakan rapat atau kongres pemuda yang diusulkan oleh Perhimpunan Pelajar Pelajar Indonesia (PPPI) yakni organisasi pemuda yang beranggota pelajar dari seluruh Indonesia</p>
+            <img src="sumpah pemudaa.jpg" alt="">
+            <p>Sumpah Pemuda adalah satu tonggak utama dalam sejarah pergerakan kemerdekaan Indonesia. Ikrar ini dianggap sebagai kristalisasi semangat untuk menegaskan cita-cita berdirinya negara Indonesia.
+                Gedung Museum memperingati Kongres Pemuda II
+                Lukisan di Jakarta pada tahun 1985 dalam rangka memperingati Hari Sumpah Pemuda
+                
+                Sumpah Pemuda adalah keputusan Kongres Pemuda Kedua yang diselenggarakan dua hari, 27—28 Oktober 1928 di Batavia (kini bernama Jakarta). Keputusan ini menegaskan cita-cita akan "tanah air Indonesia", "bangsa Indonesia", dan "bahasa Indonesia". Keputusan ini diharapkan menjadi asas bagi setiap perkumpulan kebangsaan Indonesia dan agar disiarkan dalam berbagai surat kabar dan dibacakan di muka rapat perkumpulan-perkumpulan.
+                Delegasi pemuda Jawa (Jong Java)
+                
+                Istilah "Sumpah Pemuda" sendiri tidak muncul dalam putusan kongres tersebut, melainkan diberikan setelahnya. Berikut ini adalah bunyi tiga keputusan kongres tersebut sebagaimana tercantum pada prasasti di dinding Museum Sumpah Pemuda. Naskah orisinil diabadik</p>
+
+        </div>
+        <div id="text" class="text" style="display:none;">
+            <h2>text sumpah pemuda</h2>
+            <p><strong>Pertama: "Kami putra dan putri Indonesia, mengaku bertumpah darah yang satu, tanah air Indonesia".</strong></p>
+                <p><strong> Kedua: "Kami putra dan putri Indonesia mengaku berbangsa yang satu, bangsa Indonesia".</strong></p> 
+                 <p><strong>Ketiga: "Kami putra dan putri Indonesia menjunjung bahasa persatuan, bahasa Indonesia</strong></p>
+            <img src="text sumpah pemuda.jpg" alt="">
+        </div>
+        <div id="tokoh" class="tokoh" style="display:none;">
+            <section id="text">
+                <h2>tokoh </h2>
+                <p><strong>1.Soegondo Djojopoespito (PPPI)</strong></p>
+                <p><strong>2.R. M. Joko Marsaid (Jong Java)</strong></p>
+                <p><strong>3.Mohammad Yamin (Jong Sumatranen Bond)</strong></p>
+                <p><strong>4.Amir Sjarifoeddin (Jong Bataks Bond)</strong></p>
+                <p><strong>5.Johan Mohammad Cai (Jong Islamieten Bond)</strong></p>
+                <p><strong>6.R. Katja Soengkana (Pemuda Indonesia)</strong></p>
+                <p><strong>7.Rumondor Cornelis Lefrand Senduk (Jong Celebes)</strong></p>
+                <p><strong>8.Johannes Leimena (Jong Ambon)</strong></p>
+                    <img src="tokoh sumpah pemuda.jpg" alt="">
+
+            </section>
+            <div id="tujuan" class="tujuan" style="display: none;">
+                <section id="text">
+                    <h2>tujuan sumpah pemuda</h2>
+                    <p>tujuan utaa sumpah pemuda  mempersatukan kekuatan gerakan pemuda Indonesia agar perjuangan untuk mendapatkan kemerdekaan dapat tercapai</p>
+
+
+
+                </section>
+                </div>
+            
+        </div>
+    </main>
+
+
+
+    <!-- JavaScript to toggle content -->
+    <script>
+        function showContent(section) {
+            const contents = document.querySelectorAll('.content');
+            contents.forEach(content => {
+                content.style.display = 'none';
+            });
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
